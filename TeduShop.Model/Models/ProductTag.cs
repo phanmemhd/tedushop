@@ -4,7 +4,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace TeduShop.Model.Models
 {
     [Table("ProducTags")]
-    internal class ProductTag
+    public class ProductTag
+                   
     {
         [Key]
         public string ProductID { set; get; }
