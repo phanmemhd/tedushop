@@ -11,7 +11,7 @@ namespace TeduShop.Model.Models
         public Guid ID { set; get; }
 
         [Required]
-        public DateTime VisiteDate { set; get; }
+        public DateTime VisitedDate { set; get; }
 
         [MaxLength(50)]
         public string IPAddress { set; get; }

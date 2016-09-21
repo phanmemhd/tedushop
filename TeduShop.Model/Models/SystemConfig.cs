@@ -10,9 +10,9 @@ namespace TeduShop.Model.Models
         public int ID { set; get; }
 
         [Required]
-        [Column(TypeName ="varchar")]
+        [Column(TypeName = "varchar")]
         [MaxLength(50)]
-        public string code { set; get; }
+        public string Code { set; get; }
 
         [MaxLength(50)]
         public string ValueString { set; get; }

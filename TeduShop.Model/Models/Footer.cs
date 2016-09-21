@@ -8,7 +8,7 @@ namespace TeduShop.Model.Models
     {
         [Key]
         [MaxLength(50)]
-        public int ID { set; get; }
+        public string ID { set; get; }
 
         [Required]
         public string content { set; get; }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -8,11 +9,11 @@ namespace TeduShop.Model.Models
     public class Order
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] //tu dong tang
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { set; get; }
 
         [Required]
-        [MaxLength(256) ]
+        [MaxLength(256)]
         public string CustomerName { set; get; }
 
         [Required]
@@ -34,14 +35,11 @@ namespace TeduShop.Model.Models
         [MaxLength(256)]
         public string PaymentMethod { set; get; }
 
-        [Required]
-        public DateTime CreateDate { set; get; }
-        public string CreateBy { set; get; }
+        public DateTime? CreatedDate { set; get; }
+        public string CreatedBy { set; get; }
         public string PaymentStatus { set; get; }
-        public bool status { set; get; }
+        public bool Status { set; get; }
 
-        public virtual IEquatable<OrderDetail> OrderDetails { set; get; }
-
-
+        public virtual IEnumerable<OrderDetail> OrderDetails { set; get; }
     }
 }

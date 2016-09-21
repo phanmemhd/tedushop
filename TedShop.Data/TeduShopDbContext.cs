@@ -7,7 +7,7 @@ namespace TedShop.Data
     {
         public TeduShopDbContext() : base("TeduShopConnection")
         {
-            this.Configuration.LazyLoadingEnabled = false; //khi sửa bảng cha thì bảng con cũng thay đổi
+            this.Configuration.LazyLoadingEnabled = false; //khi sửa bảng cha thì bảng con không thay đổi
         }
         public DbSet<Footer> Footers { set; get; }
         public DbSet<Menu> Menus { set; get; }

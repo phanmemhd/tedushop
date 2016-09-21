@@ -10,8 +10,8 @@ namespace TeduShop.Model.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { set; get; }
 
-        [MaxLength(50)]
         [Required]
+        [MaxLength(50)]
         public string Name { set; get; }
 
         [MaxLength(50)]
@@ -27,12 +27,11 @@ namespace TeduShop.Model.Models
         public string Email { set; get; }
 
         [MaxLength(50)]
-        public string yahoo { set; get; }
+        public string Yahoo { set; get; }
 
         [MaxLength(50)]
         public string Facebook { set; get; }
 
-        [MaxLength(50)]
         public bool Status { set; get; }
 
         public int? DisplayOrder { set; get; }

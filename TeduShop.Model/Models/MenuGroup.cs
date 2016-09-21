@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Web.UI.WebControls;
 
 namespace TeduShop.Model.Models
 {
@@ -9,7 +9,7 @@ namespace TeduShop.Model.Models
     public class MenuGroup
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] //tu dong tang
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { set; get; }
 
         [Required]

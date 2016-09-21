@@ -2,7 +2,7 @@
 
 namespace TeduShop.Data.Infrastructure
 {
-    public class Disposable : IDisposable
+    public class Disposable : IDisposable // ke thua phuong co san trong C# "cai dat cac phuong thuc tu huy"
     {
         private bool isDisposed;
 
@@ -14,7 +14,7 @@ namespace TeduShop.Data.Infrastructure
         public void Dispose()
         {
             Dispose(true);
-            GC.SuppressFinalize(this);
+            GC.SuppressFinalize(this); // GC la phuong thuc thu hoach bo nho
         }
 
         private void Dispose(bool disposing)

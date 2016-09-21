@@ -7,7 +7,7 @@ namespace TeduShop.Model.Models
     public class Menu
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] //tu dong tang
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { set; get; }
 
         [Required]
