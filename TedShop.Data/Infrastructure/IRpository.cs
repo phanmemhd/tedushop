@@ -7,14 +7,14 @@ namespace TeduShop.Data.Infrastructure
 {
     public interface IRepository<T> where T : class
     {
-        // Marks an entity as new 
-        T Add(T entity);
+        // Marks an entity as new
+        T Add(T entity); // Chữ T là khi thêm vào giá trị nó sẽ lưu ở chữ "T" đầu dòng
 
-        // Marks an entity as modified - 
+        // Marks an entity as modified
         void Update(T entity);
 
-        // Marks an entity to be removed - 
-        T Delete(T entity);
+        // Marks an entity to be removed
+        T Delete(T entity); //
 
         T Delete(int id);
 
